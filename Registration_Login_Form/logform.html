@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="rfstyle.css">
+</head>
+<body>
+    <form action="https://formsubmit.co/paulnieves2417@gmail.com" method="POST">
+        <img src="/Images/Logo.png" class="logo-img">
+        <h2>Login Account</h2>
+        <div class="inputBox">
+            <input type="text" name="username" required>
+            <label>Username</label>
+        </div>
+        <div class="inputBox">
+            <input type="email" name="email" required>
+            <label>Email</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" required>
+            <label>Create &nbsp Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="cpassword" required>
+            <label>Confirm &nbsp Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Create">
+        </div>
+    </form>
+    <script>
+        let label = document.querySelectorAll('label').
+        forEach(label => {label.innerHTML = label.innerText.split('').map((letters, i) =>
+        `<span style="transition-delay: ${i * 50}ms"> ${letters}</span>`).join('');});
+
+        document.getElementById('RegForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            localStorage.setItem('isRegistered', 'true');
+
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+</html>
