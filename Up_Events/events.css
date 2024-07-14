@@ -218,7 +218,7 @@ a.sidebar-link:hover {
 
 .pagetitle {
     color: white;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .underline {
@@ -233,12 +233,27 @@ a.sidebar-link:hover {
     padding-top: 1em;
 }
 
-form {
-    padding: 4em;
+.cardsc {
+    padding-bottom: 1em;
+    padding-left: 3.5em;
+    width: 100%;
+    margin: auto;
 }
 
-.form-label, .form-check-label {
-    color: white;
+.card {
+    border: none;
+    border-radius: 1em;
+    width: 90%;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    width: 95%;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -300,7 +315,7 @@ form {
 
     .pagetitle {
         color: white;
-        font-size: 3em;
+        font-size: 2em;
         padding-top: 0.3em;
     }
 
@@ -315,6 +330,10 @@ form {
     font-size: 1.6em;
     padding-top: 1em;
     letter-spacing: 0.1em;
+    }
+
+    .cardsc {
+        padding-left: 2em;
     }
 }
 
