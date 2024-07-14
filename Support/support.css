@@ -50,7 +50,7 @@ h1 {
 }
 
 .logo-img {
-    width: 25px;
+    width: 30px;
 }
 
 #sidebar.expand {
@@ -201,12 +201,24 @@ a.sidebar-link:hover {
 
 /* Body */
 
-.pagetitle {
+.maincontent {
+    padding: 1em;
+}
+
+.paragraph {
     color: white;
-    font-size: 4em;
-    font-weight: bold;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.pagetitle, .subtitle {
     text-align: center;
     justify-content: center;
+}
+
+.pagetitle {
+    color: white;
+    font-size: 5em;
 }
 
 .underline {
@@ -215,21 +227,54 @@ a.sidebar-link:hover {
     margin: auto;
 }
 
-.accordion {
-    width: 80%;
-    margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
+.subtitle {
+    color: white;
+    font-size: 3em;
+    padding-top: 1em;
 }
 
-.accordion-button:focus, .accordion-button:not(.collapsed) {
-    background-color: #3b7ddd;
+.paragraph {
+    text-align: justify;
     color: white;
+    font-size: 1.2rem;
+    padding-top: 1em;
 }
 
-.accordion-body {
-    background-color: #1e2226;
-    color: white;
+.cardsc {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+}
+
+.card {
+    border: none;
+    width: 35em;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+.descript {
+    text-align: center;
+}
+
+.card-text {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.supportbtn {
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -290,13 +335,61 @@ a.sidebar-link:hover {
     }
 
     .pagetitle {
-        font-size: 2.5em;
+        color: white;
+        font-size: 3em;
+        padding-top: 0.3em;
     }
 
     .underline {
-        border-bottom: 1px solid white;
-        width: 70%;
-        margin: auto;
+    border-bottom: 1px solid white;
+    width: 70%;
+    margin: auto;
+    }
+
+    .subtitle {
+    color: white;
+    font-size: 1.6em;
+    padding-top: 1em;
+    letter-spacing: 0.1em;
+    }
+
+    .cardsc {
+        display: inline-block;
+    }
+
+    .card {
+        width: 50px;
+    }
+    .card-title {
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .descript {
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    .card-text {
+        justify-content: center;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    .supportbtn {
+        padding: 0.5em;
+        border-radius: 1em;
+        margin-top: auto;
+        font-size: 0.5em;
+    }
+
+    .card {
+        width: 15em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+        margin-left: 1.9em;
     }
 }
 
@@ -339,7 +432,7 @@ footer {
         width: 30px;
     }
 
-    .author p {
+    .footerAuthor p {
         font-size: 0.5em;
     }
 }

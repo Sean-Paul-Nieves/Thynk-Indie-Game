@@ -50,7 +50,7 @@ h1 {
 }
 
 .logo-img {
-    width: 25px;
+    width: 30px;
 }
 
 #sidebar.expand {
@@ -193,6 +193,12 @@ a.sidebar-link:hover {
     margin-left: auto;
 }
 
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.7em;
+    }
+}
+
 /* Body */
 
 #carouselExampleCaptions {
@@ -218,6 +224,62 @@ a.sidebar-link:hover {
 }
 
 @media (max-width: 768px) {
+    #sidebar {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    #sidebar.expand {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .sidebar-nav {
+        padding: 1rem 1;
+        flex: 1 1 auto;
+    }
+
+    .sidebar-logo a {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .sidebar-link i {
+        font-size: 0.9rem;
+        margin-right: .75rem;
+    }
+
+    a.sidebar-link span {
+        font-size: 1em;
+    }
+
+    a.sidebar-link {
+        padding: .625rem 0.8rem;
+
+    }
+
+    .sidebar-item > .sidebar-link {
+        font-size: 0.6em;
+    }
+    .logo-img {
+        width: 20px;
+    }
+
+    .toggle-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
+        padding: 1rem 1rem;
+    }
+
+    .main {
+        margin-left: 2.5em;
+    }
+
+    .title {
+        padding-left: 0.5em;
+    }
+
     #carouselExampleCaptions {
         width: 80%;
     }
@@ -265,7 +327,7 @@ footer {
         width: 30px;
     }
 
-    .author p {
+    .footerAuthor p {
         font-size: 0.5em;
     }
 }

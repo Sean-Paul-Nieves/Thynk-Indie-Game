@@ -192,11 +192,18 @@ a.sidebar-link:hover {
     margin-left: auto;
 }
 
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.7em;
+    }
+}
+
 /* Body */
 
 .maincontent {
     padding: 1em;
 }
+
 .pagetitle, .subtitle, .Paragraph, .quote, .author {
     text-align: center;
     justify-content: center;
@@ -243,6 +250,62 @@ a.sidebar-link:hover {
 }
 
 @media (max-width: 768px) {
+    #sidebar {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    #sidebar.expand {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .sidebar-nav {
+        padding: 1rem 1;
+        flex: 1 1 auto;
+    }
+
+    .sidebar-logo a {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .sidebar-link i {
+        font-size: 0.9rem;
+        margin-right: .75rem;
+    }
+
+    a.sidebar-link span {
+        font-size: 1em;
+    }
+
+    a.sidebar-link {
+        padding: .625rem 0.8rem;
+
+    }
+
+    .sidebar-item > .sidebar-link {
+        font-size: 0.6em;
+    }
+    .logo-img {
+        width: 20px;
+    }
+
+    .toggle-btn {
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
+        padding: 1rem 1rem;
+    }
+
+    .main {
+        margin-left: 2.5em;
+    }
+
+    .title {
+        padding-left: 0.5em;
+    }
+
     .pagetitle {
             color: white;
             font-size: 3em;
@@ -256,7 +319,6 @@ a.sidebar-link:hover {
     }
 
     .quote {
-        color: brown;
         font-size: 0.7em;
         display: flex;
         text-align: center;
@@ -277,6 +339,7 @@ a.sidebar-link:hover {
         padding-top: 1em;
         letter-spacing: 0.1em;
     }
+    
     .paragraph {
         font-size: 0.8em;
     }
