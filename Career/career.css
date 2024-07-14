@@ -240,41 +240,31 @@ a.sidebar-link:hover {
     padding-top: 1em;
 }
 
-.cardsc {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 2em;
-}
-
 .card {
+    display: flex;
     border: none;
-    width: 35em;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    transition: all 0.5s ease-in-out;
 }
 
-.card-img-top {
-    width: 100%;
+.card:hover {
+    width: 55%;
 }
 
-.card-title {
+.card-text .text-body-secondary {
+    font-size: 1rem;
+    color: black;
+}
+
+.card:hover .card-text .text-body-secondary {
+    color: black;
+}
+
+.card-title, .card-text, .card-text .text-body-secondary {
     justify-content: center;
     text-align: center;
-    font-size: 2em;
-}
-
-.descript {
-    text-align: center;
-}
-
-.card-text {
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.supportbtn {
-    padding: 1em;
-    border-radius: 1em;
-    margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -346,50 +336,27 @@ a.sidebar-link:hover {
     margin: auto;
     }
 
-    .subtitle {
-    color: white;
-    font-size: 1.5em;
-    padding-top: 1em;
-    letter-spacing: 0.1em;
-    }
-
-    .cardsc {
-        display: inline-block;
-    }
-
     .card {
-        width: 50px;
-    }
-    .card-title {
-        justify-content: center;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .descript {
-        text-align: center;
-        font-size: 0.7em;
+        display: flex;
+        border: none;
+        width: 70%;
+        margin: auto;
+        margin-top: 1em;
+        margin-left: 3.2em;
+        transition: all 0.5s ease-in-out;
     }
 
-    .card-text {
-        justify-content: center;
-        text-align: center;
-        font-size: 0.6em;
+    .card:hover {
+        width: 75%;
     }
 
-    .supportbtn {
-        padding: 1em;
-        border-radius: 1em;
-        margin-top: auto;
-        font-size: 0.5em;
+    .card-text .text-body-secondary {
+        font-size: 0.8rem;
+        color: black;
     }
 
-    .card {
-        width: 15em;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2em;
-        margin-left: 1.9em;
+    .card:hover .card-text .text-body-secondary {
+        color: black;
     }
 }
 

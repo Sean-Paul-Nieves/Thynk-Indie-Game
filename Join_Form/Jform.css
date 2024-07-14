@@ -233,8 +233,13 @@ a.sidebar-link:hover {
     padding-top: 1em;
 }
 
+.app-form {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 3em 0;
+}
 form {
-    padding: 4em;
+    padding: 3em;
 }
 
 .form-label, .form-check-label {
