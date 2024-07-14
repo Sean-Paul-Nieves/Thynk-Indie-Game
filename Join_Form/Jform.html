@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="Landing_Page/style.css">
+    <link rel="stylesheet" href="Jform.css">
+    <title>Apply A Job!</title>
 </head>
 <body>
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">
                 <button class="toggle-btn" type="button">
-                    <img src="Images/Logo.png" alt="" class="logo-img">
+                    <img src="../Images/Logo.png" alt="" class="logo-img">
                 </button>
                 <div class="sidebar-logo">
                     <a href="#">THYNK INDIE GAMES</a>
@@ -67,10 +66,10 @@
                     </a>
                     <ul id="Support" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="FAQ/FAQ.html" class="sidebar-link">FAQ</a>
+                            <a href="../FAQ/FAQ.html" class="sidebar-link">FAQ</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Support/support.html" class="sidebar-link">Contact Us</a>
+                            <a href="../Support/support.html" class="sidebar-link">Contact Us</a>
                         </li>
                     </ul>
                 </li>
@@ -106,7 +105,7 @@
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="Registration_Login_Form/regform.html" class="sidebar-link">
+                <a href="../Registration_Login_Form/regform.html" class="sidebar-link">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
@@ -121,85 +120,93 @@
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      <a class="nav-link" href="About_Us/aboutUs.html">About Us</a>
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      <a class="nav-link" href="../About_Us/aboutUs.html">About Us</a>
                       <a class="nav-link" href="#">Games</a>
                       <a class="nav-link" href="#">Join Us!</a>
-                      <a class="nav-link" href="Registration_Login_Form/regform.html">Log Out</a>
+                      <a class="nav-link" href="../Registration_Login_Form/regform.html">Log Out</a>
                     </div>
                   </div>
                 </div>
               </nav>
               <div>
-                <img src="Images/Header.png" class="header-img">
+                <img src="../Images/Header.png" class="header-img">
               </div>
-              <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <div class="maincontent">
+                <h1 class="pagetitle">Join Us!</h1>
+                <div class="underline"></div>
+                <h1 class="subtitle">Fill Up the Form!</h1>
+            </div>
+            <form class="row g-3 needs-validation" action="https://formsubmit.co/paulnieves2417@gmail.com" method="POST" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" name="First_Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Images/Game_1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="validationCustom02" name="Last_Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
                   </div>
-                  <div class="carousel-item">
-                    <img src="Images/Game_2.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/Game_3.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/Game_4.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images/Game_5.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="email" class="form-control" id="validationCustomUsername" name="Email" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a valid email.
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="body-text">
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies placerat lectus, sit amet consectetur mi ultricies eget.
-                    Proin tincidunt felis mauris, a varius quam congue a. Curabitur accumsan scelerisque neque at efficitur. Fusce a mollis nisi. <br><br>
-
-                    Aenean quis placerat nunc, nec tincidunt lectus. Morbi non rutrum libero, eu tincidunt est. Sed interdum et eros sit amet auctor.
-                    In hac habitasse platea dictumst. Nulla iaculis leo sed metus vehicula, at accumsan massa tincidunt. Curabitur malesuada ipsum id nisl elementum semper.
-                    Vestibulum auctor, sem at sagittis posuere, diam eros cursus sapien, quis dignissim mauris massa vitae dui. Aliquam ornare eu turpis eu aliquet.
-                    Nunc tincidunt odio sed varius volutpat. Praesent ultrices nisi eget ipsum blandit condimentum. Maecenas dignissim risus liber. <br><br>
-
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas eros felis, aliquam in iaculis nec, vehicula sed nibh. Donec metus leo,
-                    volutpat sed magna sed, ornare dapibus nibh. Nullam vulputate pharetra sollicitudin. Phasellus consequat justo bibendum hendrerit ornare.
-                    Aliquam massa urna, euismod at sollicitudin non, aliquet eu justo. Cras mauris velit, porta quis dui et, lacinia vulputate justo. <br><br>
-
-                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas eros felis, aliquam in iaculis nec, vehicula sed nibh. Donec metus leo,
-                    volutpat sed magna sed, ornare dapibus nibh. Nullam vulputate pharetra sollicitudin. Phasellus consequat justo bibendum hendrerit ornare.
-                    Aliquam massa urna, euismod at sollicitudin non, aliquet eu justo. Cras mauris velit, porta quis dui et, lacinia vulputate justo.
-                </p>
-              </div>
-        </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">LinkedIn Profile</label>
+                  <input type="url" class="form-control" id="validationCustom03" name="LinkedIn_Profile" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid link.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Role to Take</label>
+                  <select class="form-select" id="validationCustom04" name="Role" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Programmer</option>
+                    <option>Graphic Artist</option>
+                    <option>Concept Designer</option>
+                    <option>Developer</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid role.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="validationCustom05" name="Phone_Number" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid phone number.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
         <footer>
             <div class="logo-img">
-                <img src="Images/Logo.png" alt="" class="footerlogo">
+                <img src="../Images/Logo.png" alt="" class="footerlogo">
             </div>
             <div class="footerAuthor">
                 <p>Sean Paul Nieves || 202311382@fit.edu.ph</p>
@@ -209,6 +216,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="Landing_Page/script.js"></script>
+    <script src="Jform.js"></script>
 </body>
 </html>
