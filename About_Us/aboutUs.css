@@ -193,6 +193,10 @@ a.sidebar-link:hover {
 }
 
 /* Body */
+
+.maincontent {
+    padding: 1em;
+}
 .pagetitle, .subtitle, .Paragraph, .quote, .author {
     text-align: center;
     justify-content: center;
@@ -201,7 +205,6 @@ a.sidebar-link:hover {
 .pagetitle {
     color: white;
     font-size: 5em;
-    padding-top: 1em;
 }
 
 .underline {
@@ -222,7 +225,6 @@ a.sidebar-link:hover {
 .author {
     color: white;
     font-size: 1.1em;
-    padding-top: 1em;
     padding-left: 36em;
 }
 
@@ -237,8 +239,7 @@ a.sidebar-link:hover {
     text-align: justify;
     color: white;
     font-size: 1.2rem;
-    padding: 3%;
-    margin: 0 2.5em;
+    padding-top: 1em;
 }
 
 @media (max-width: 768px) {
@@ -271,12 +272,12 @@ a.sidebar-link:hover {
 
     .subtitle {
         color: white;
-        font-size: 1em;
+        font-size: 1.6em;
         padding-top: 1em;
         letter-spacing: 0.1em;
     }
     .paragraph {
-        font-size: 1em;
+        font-size: 0.65em;
     }
 }
 
