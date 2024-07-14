@@ -30,10 +30,6 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
-
 h1 {
     font-weight: 600;
     font-size: 1.5rem;
@@ -218,7 +214,7 @@ a.sidebar-link:hover {
 
 .pagetitle {
     color: white;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .underline {
@@ -227,31 +223,35 @@ a.sidebar-link:hover {
     margin: auto;
 }
 
-.card {
-    display: flex;
-    border: none;
-    width: 50%;
+.subtitle {
+    color: white;
+    font-size: 1em;
+    padding-top: 1em;
+}
+
+.list-group {
+    width: 90%;
     margin: auto;
-    margin-top: 2em;
-    transition: all 0.5s ease-in-out;
+    padding-bottom: 2em;
 }
 
-.card:hover {
-    width: 55%;
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    font-size: 1em;
 }
 
-.card-text .text-body-secondary {
-    font-size: 1rem;
-    color: black;
-}
 
-.card:hover .card-text .text-body-secondary {
-    color: black;
-}
-
-.card-title, .card-text, .card-text .text-body-secondary {
-    justify-content: center;
-    text-align: center;
+.cta {
+    border: none;
+    background:    #3b7ddd;
+    border-radius: 1000px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    display: flex;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -323,27 +323,25 @@ a.sidebar-link:hover {
     margin: auto;
     }
 
-    .card {
+    .subtitle {
+    color: white;
+    font-size: 0.8em;
+    padding-top: 1em;
+    letter-spacing: 0.1em;
+    }
+
+    .list-group-item {
+        font-size: 0.7em;
+    }
+
+    .cta {
+        font-size: 0.8em;
+        border-radius: 1000px;
+        padding:       5px 15px;
+        text-align:    center;
+        text-shadow:   1px 1px #000000;
         display: flex;
-        border: none;
-        width: 70%;
         margin: auto;
-        margin-top: 1em;
-        margin-left: 3.2em;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .card:hover {
-        width: 75%;
-    }
-
-    .card-text .text-body-secondary {
-        font-size: 0.8rem;
-        color: black;
-    }
-
-    .card:hover .card-text .text-body-secondary {
-        color: black;
     }
 }
 

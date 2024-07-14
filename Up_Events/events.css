@@ -218,19 +218,13 @@ a.sidebar-link:hover {
 
 .pagetitle {
     color: white;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .underline {
     border-bottom: 1px solid white;
     width: 30%;
     margin: auto;
-}
-
-.subtitle {
-    color: white;
-    font-size: 3em;
-    padding-top: 1em;
 }
 
 .cardsc {
