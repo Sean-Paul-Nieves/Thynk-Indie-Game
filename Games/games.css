@@ -235,6 +235,7 @@ a.sidebar-link:hover {
 
 .maincontent h2 {
     color: red;
+    padding-top: 1em;
     font-size: 0.9em;
     justify-content: center;
     text-align: center;
@@ -377,6 +378,32 @@ a.sidebar-link:hover {
 
     .cardsc {
         padding-left: 2em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .maincontent h2 {
+        font-size: 0.65em;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+
+    .card-text, .card-footer {
+        font-size: 0.8em
+    }
+
+    .circle-good, .circle-mid, .circle-poor {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        font-size: 0.7em;
     }
 }
 

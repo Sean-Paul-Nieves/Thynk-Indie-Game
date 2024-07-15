@@ -253,6 +253,7 @@ a.sidebar-link:hover {
     padding-top: 1em;
     color: white;
 }
+
 .card-body #gameImage {
     width: 50%;
     height: 30%;
@@ -357,6 +358,25 @@ a.sidebar-link:hover {
 
     .cardsc {
         padding-left: 2em;
+    }
+
+    .card-head {
+        font-size: 1em;
+    }
+
+    .form-check {
+        padding-bottom: 1em;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 0.9em;
+    }
+
+    .card-body #gameImage {
+        width: 90%;
+        height: 100%;
+        padding-bottom: 1em;
     }
 }
 
